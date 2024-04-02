@@ -3,7 +3,7 @@ actor crazy {
 
   let name : Text = "Learning Motoko Language";
   var manifesto : Text = "Im learning Motoko to Learn Future and be a fullstack developer";
-  let goals = Buffer.Buffer<Text>(0);
+  let goals : Buffer.Buffer<Text> = Buffer.Buffer<Text>(0);
   public query func getName() : async Text {
     return name;
   };
